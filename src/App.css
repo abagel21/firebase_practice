@@ -99,3 +99,7 @@ input {
 .received {
     align-self: flex-start;
 }
+
+.counter {
+    color: white;
+}

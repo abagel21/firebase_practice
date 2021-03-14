@@ -2,7 +2,7 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 
-firebase.initializeApp({
+const app = firebase.initializeApp({
     apiKey: "AIzaSyDLsh3lyeBemQQBVy7-j7n9etBvMvvGM-M",
     authDomain: "fir-practice-d54f2.firebaseapp.com",
     projectId: "fir-practice-d54f2",
@@ -12,7 +12,7 @@ firebase.initializeApp({
     measurementId: "G-FKV7Q3001T",
 });
 
-const auth = firebase.auth();
+const auth = firebase.auth(app);
 const firestore = firebase.firestore();
 
 export { auth, firestore };
